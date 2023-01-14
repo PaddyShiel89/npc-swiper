@@ -14,6 +14,7 @@ const customJestConfig = {
     // Handle module aliases (this will be automatically configured for you
     // soon)
     "^@app/components/(.*)$": "<rootDir>/components/$1",
+    "^@app/layout/(.*)$": "<rootDir>/layout/$1",
     "^@app/pages/(.*)$": "<rootDir>/pages/$1",
   },
   // if using TypeScript with a baseUrl set to the root directory then you need
