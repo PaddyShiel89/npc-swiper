@@ -1,0 +1,53 @@
+@use "sass:math";
+@import "@/styles/style-guide";
+
+$mobile-nav-font-size: 1.2rem;
+
+.base {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+
+  color: $white;
+  background: $gray-900;
+
+  font-size: $mobile-nav-font-size;
+  text-align: center;
+
+  ul {
+    // Reset element
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: $spacer math.div($spacer, 2);
+    width: 100%;
+
+    // Text
+    color: inherit;
+    text-decoration: none;
+
+    span {
+      line-height: 1;
+    }
+  }
+}
+
+.icon {
+  font-size: 2.4rem;
+  margin-bottom: math.div($spacer, 2);
+}
+
+.current {
+  background: $gray-700;
+}
