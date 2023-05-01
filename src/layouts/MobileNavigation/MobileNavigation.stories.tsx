@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import MobileNavigation from "./MobileNavigation.tsx";
+import MobileNavigation from "./MobileNavigation";
 
 const meta: Meta<typeof MobileNavigation> = {
   title: "Layouts/Mobile navigation",

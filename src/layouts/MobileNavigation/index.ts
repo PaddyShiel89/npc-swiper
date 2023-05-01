@@ -1,1 +1,1 @@
-export { default as MobileNavigation } from "./MobileNavigation.tsx";
+export { default as MobileNavigation } from "./MobileNavigation";

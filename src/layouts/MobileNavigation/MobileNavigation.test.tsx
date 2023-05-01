@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
-import MobileNavigation from "./MobileNavigation.tsx";
+import MobileNavigation from "./MobileNavigation";
 import { navLinks } from "@/data";
 
 describe("Mobile navigation", () => {
