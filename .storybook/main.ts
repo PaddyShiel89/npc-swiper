@@ -23,6 +23,13 @@ const config: StorybookConfig = {
       alias: {
         ...config.resolve?.alias,
         "@": path.resolve(__dirname, "../src/"),
+        "next/router": "next-router-mock",
+      },
+      fallback: {
+        // Declare fallsbacks for next/router to work - no longer included by
+        // default with webpack 5
+        path: require.resolve("path-browserify"),
+        url: require.resolve("url/"),
       },
     },
   }),
