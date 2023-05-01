@@ -24,6 +24,10 @@ const config: StorybookConfig = {
         ...config.resolve?.alias,
         "@": path.resolve(__dirname, "../src/"),
         "next/router": "next-router-mock",
+
+        // Fix for broken import in next-router-mock/MemoryRouterProvider
+        "next/dist/next-server/lib/router-context":
+          "next/dist/shared/lib/router-context",
       },
       fallback: {
         // Declare fallsbacks for next/router to work - no longer included by
