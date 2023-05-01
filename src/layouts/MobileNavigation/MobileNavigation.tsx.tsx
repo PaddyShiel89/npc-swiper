@@ -1,9 +1,11 @@
 import Link from "next/link";
+
+import styles from "./MobileNavigation.module.scss";
 import { navLinkData, navLinks } from "@/data";
 
 const MobileNavigation = () => {
   return (
-    <nav>
+    <nav className={styles.base}>
       <ul>
         {navLinks.map((link) => (
           <MobileNavLink key={link.name} {...link} />

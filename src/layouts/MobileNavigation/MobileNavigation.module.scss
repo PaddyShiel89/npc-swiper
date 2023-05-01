@@ -1,0 +1,28 @@
+@import "@/styles/style-guide";
+
+.base {
+  width: 100%;
+  background: $gray-900;
+  color: $white;
+  padding: $spacer;
+
+  ul {
+    // Reset element
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    color: $white;
+    text-decoration: none;
+  }
+}
