@@ -2,11 +2,12 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
 import MobileNavigation from "./MobileNavigation.tsx";
+import { navLinks } from "@/data";
 
 describe("Mobile navigation", () => {
-  it("renders a link", () => {
+  it("renders a link for each nav item", () => {
     render(<MobileNavigation />);
-    const link = screen.getByRole("a");
-    expect(link).toBeInTheDocument();
+    const links = screen.getAllByRole("link");
+    expect(links).toHaveLength(navLinks.length);
   });
 });
