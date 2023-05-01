@@ -1,8 +1,5 @@
 @import "./variables";
 
-@import "bootstrap/scss/mixins/banner";
-@include bsBanner(Reboot);
-
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/maps";
