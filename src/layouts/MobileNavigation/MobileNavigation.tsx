@@ -9,10 +9,12 @@ import { navLinkData, navLinks } from "@/data";
 const MobileNavigation = () => {
   const router = useRouter();
 
+  const sortedNavLinks = navLinks.sort((a, b) => a.mobileOrder - b.mobileOrder);
+
   return (
     <nav className={styles.base}>
       <ul>
-        {navLinks.map((link) => (
+        {sortedNavLinks.map((link) => (
           <MobileNavLink
             key={link.name}
             {...link}
