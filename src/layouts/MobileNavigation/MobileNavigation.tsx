@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from "./MobileNavigation.module.scss";
 import { navLinkData, navLinks } from "@/data";
@@ -17,11 +18,17 @@ const MobileNavigation = () => {
 
 export default MobileNavigation;
 
-const MobileNavLink = (data: navLinkData) => (
-  <li>
-    <Link href={data.path}>
-      <span>Icon</span>
-      <span>{data.name}</span>
-    </Link>
-  </li>
-);
+const MobileNavLink = (data: navLinkData) => {
+  return (
+    <li>
+      <Link href={data.path}>
+        <FontAwesomeIcon
+          className={styles.icon}
+          data-testid="nav-link-icon"
+          icon={data.icon}
+        />
+        <span>{data.name}</span>
+      </Link>
+    </li>
+  );
+};

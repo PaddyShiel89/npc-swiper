@@ -3,8 +3,6 @@ import { MINIMAL_VIEWPORTS } from "@storybook/addon-viewport";
 
 import "@/styles/globals.scss";
 
-console.log(MINIMAL_VIEWPORTS);
-
 /** Custom viewports added preview options */
 const customViewports = {
   samsungS21U: {
