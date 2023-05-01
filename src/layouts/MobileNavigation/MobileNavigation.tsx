@@ -33,7 +33,11 @@ export const MobileNavLink = (data: MobileNavLinkProps) => {
 
   return (
     <li>
-      <Link href={data.path} className={linkClassnames}>
+      <Link
+        href={data.path}
+        className={linkClassnames}
+        aria-current={data.currentPage ? "page" : undefined}
+      >
         <FontAwesomeIcon
           className={styles.icon}
           data-testid="nav-link-icon"
