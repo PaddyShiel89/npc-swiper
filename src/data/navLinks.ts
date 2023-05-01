@@ -3,7 +3,6 @@ import {
   faHelmetBattle,
   faMagnifyingGlass,
   faSliders,
-  faSparkles,
 } from "@fortawesome/pro-regular-svg-icons";
 
 const navLinks: navLinkData[] = [
@@ -21,11 +20,6 @@ const navLinks: navLinkData[] = [
     name: "My NPCs",
     icon: faHelmetBattle,
     path: "/my-npcs",
-  },
-  {
-    name: "What's New?",
-    icon: faSparkles,
-    path: "/whats-new",
   },
 ];
 
