@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Button.module.scss";
 
-const Button: React.FC = ({ ...props }: ButtonProps) => {
+const Button = ({ type = "button", ...props }: ButtonProps) => {
   return <button className={styles.base} {...props} />;
 };
 
@@ -12,7 +12,3 @@ interface ButtonProps
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {}
-
-Button.defaultProps = {
-  type: "button",
-};
