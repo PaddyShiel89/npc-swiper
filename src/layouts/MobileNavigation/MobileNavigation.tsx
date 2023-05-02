@@ -30,7 +30,7 @@ const MobileNavigation = () => {
 export default MobileNavigation;
 
 export const MobileNavLink = (data: MobileNavLinkProps) => {
-  const linkClassnames = classNames({ [styles.current]: data.currentPage });
+  const linkClassnames = classNames({ [styles.currentPage]: data.currentPage });
 
   return (
     <li>
