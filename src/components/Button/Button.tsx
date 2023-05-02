@@ -18,13 +18,13 @@ export default Button;
 // Children should not be provided along with a label
 type ConditionalLabelButton =
   | {
-      children?: React.ReactNode;
+      children: React.ReactNode;
       label?: never;
     }
   | {
       children?: never;
       /** Provide simple text in place of `children`.  */
-      label?: string;
+      label: string;
     };
 
 type ButtonProps = React.DetailedHTMLProps<
