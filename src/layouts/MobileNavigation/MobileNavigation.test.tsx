@@ -2,8 +2,8 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import mockRouter from "next-router-mock";
 
+import MobileNavigation, { MobileNavigationStyles } from "./";
 import { navLinks } from "@/data";
-import { MobileNavigation, MobileNavigationStyles } from ".";
 
 jest.mock("next/router", () => require("next-router-mock"));
 
