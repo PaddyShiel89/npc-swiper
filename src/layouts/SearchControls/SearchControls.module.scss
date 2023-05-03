@@ -1,0 +1,12 @@
+@use "sass:math";
+@import "@/styles/style-guide";
+
+.button {
+  background-color: $gray-200;
+  color: $gray-900;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: $spacer;
+  line-height: 0;
+}
