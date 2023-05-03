@@ -37,6 +37,11 @@ $mobile-nav-font-size: 1.2rem;
     color: $white;
     text-decoration: none;
 
+    &.currentPage {
+      color: $gray-900;
+      background: $gray-100;
+    }
+
     span {
       line-height: 1;
     }
@@ -46,8 +51,4 @@ $mobile-nav-font-size: 1.2rem;
 .icon {
   font-size: 2.4rem;
   margin-bottom: math.div($spacer, 2);
-}
-
-.currentPage {
-  background: $gray-700;
 }
