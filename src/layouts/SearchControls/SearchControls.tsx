@@ -32,19 +32,24 @@ export const SearchUIButton = ({ variant }: SearchUIButtonProps) => {
   /* -------------------------------- Variants -------------------------------- */
 
   let faIcon: IconDefinition = faTriangleExclamation;
+  let description: string = "";
 
   switch (variant) {
     case "like":
       faIcon = faHeart;
+      description = "Like";
       break;
     case "dislike":
       faIcon = faHeartCrack;
+      description = "Dislike";
       break;
     case "info":
       faIcon = faCircleInfo;
+      description = "More info";
       break;
     case "undo":
       faIcon = faRotateLeft;
+      description = "Undo";
       break;
     default:
       break;
@@ -53,6 +58,7 @@ export const SearchUIButton = ({ variant }: SearchUIButtonProps) => {
   return (
     <Button className={styles.button}>
       <FontAwesomeIcon icon={faIcon} />
+      <span>{description}</span>
     </Button>
   );
 };

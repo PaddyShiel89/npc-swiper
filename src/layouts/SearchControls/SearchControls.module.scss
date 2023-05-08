@@ -9,4 +9,8 @@
   font-size: 2rem;
   padding: $spacer;
   line-height: 0;
+
+  span {
+    @include visually-hidden();
+  }
 }
